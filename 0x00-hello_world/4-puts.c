@@ -2,8 +2,7 @@
 /*A program that prints a string by use of c language*/
 int main(void)
 {
-	char *s = ""/Programming is like building a multilingual puzzle";
-	puts(s);
+	puts("\"Programming is like building a multilingual puzzle");
 	return(0);
 }
 
