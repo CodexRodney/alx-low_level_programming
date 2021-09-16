@@ -10,7 +10,7 @@ int find_sqrt(int k, int i);
  * Return: The square root
  * 	   -1 if @k doesn't have a natural square
  */
-nt find_sqrt(int k,int i)
+int find_sqrt(int k,int i)
 {
 	if ((i * i) == k)
 		return (i);
