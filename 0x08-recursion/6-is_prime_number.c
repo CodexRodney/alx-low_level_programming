@@ -14,7 +14,7 @@ int divis(int i, int j)
 	if (i % j == 0)
 		return (0);
 
-	if(j == i / 2)
+	if (j == i / 2)
 		return (1);
 
 	return (divis(i, j + 1));
@@ -30,7 +30,7 @@ int is_prime_number(int n)
 {
 	int j = 2;
 
-	if (n <=1)
+	if (n <= 1)
 		return (0);
 
 	if (n >= 2 && n <= 3)
