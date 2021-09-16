@@ -5,14 +5,14 @@
  */
 int _strlen_recursion(char *s)
 {
-	int number = "\0";
-	if (s == 0)
+	int number = 0;
+	if (s == "\0")
 	{
 		return 0;
 	}else
 	{ 
 		return 1;
-		_putchar(_strlen_recursion(s) + _strlen_recursion(s + 1));
+		_putchar( + _strlen_recursion(s + 1));
 	;}
 }
 
