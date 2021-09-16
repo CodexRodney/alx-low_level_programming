@@ -1,4 +1,7 @@
-#include "_putchar.h"
-void _puts_recursion(char *s);
-int _putchar(int c)
+#ifndef MAIN_H
+#define MAIN_H
 
+void _puts_recursion(char *s);
+int _putchar(char c);
+
+#endif
