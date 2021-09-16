@@ -5,20 +5,11 @@
  */
 void _print_rev_recursion(char *s)
 {
-	if(strlen(s) == 0)
+	if(*s)
 	{
-		_putchar('\n');
-	}
-	if(strlen(s) == 1)
-	{
+		_print_rev_recursion(s+1);
 		_putchar(*s);
 	}
-	int index;
-	index = strlen(s);
-	index = index - 1;
-	putchar(s[index]);
-	s = s[index];
-	_print_rev_recursion(s);
-}
+	}
 
 
