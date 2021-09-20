@@ -3,8 +3,7 @@
 #include <stdio.h>
 
 /**
- * main: Program checks last digit of number,returns a string depending on the criteria
- *@n: The number to be checked
+ * main- Program checks last digit of number
  *
  * Return: Always 0
  */
@@ -12,7 +11,7 @@ int main(void)
 {
 	int n;
 	int l;
-	
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	l = n % 10;
