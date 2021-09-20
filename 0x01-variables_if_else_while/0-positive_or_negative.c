@@ -1,8 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+*main- A program that determines a number is positive,negative or zero
+*@n: Number inputted for its sign to be known
+*
+*Return: Always return 0
+*/
 int main(void)
 {
 	int n;
