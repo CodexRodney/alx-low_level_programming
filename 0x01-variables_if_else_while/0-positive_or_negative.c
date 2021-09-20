@@ -4,7 +4,6 @@
 
 /**
 *main- A program that determines a number is positive,negative or zero
-*@n: Number inputted for its sign to be known
 *
 *Return: Always return 0
 */
@@ -16,15 +15,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("is positive");
+		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("is zero");
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-		printf("is negative");
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
