@@ -2,13 +2,14 @@
 #include <stdlib.h>
 
 /**
- * create_array- creates an array of chars and
- * initializes it with specific char
+ * create_array - creates an array of chars.
  *
- * @size: Size of array of characters
- * @c: the character
- * Return: NULL if size is 0 or it fails
- *	pointer
+ * @size: size of memory allocated.
+ * @c: The characters initialised to array created.
+ *
+ * Return: Pointer to the array.
+ * NULL if size == 0.
+ * NULL if it fails.
  */
 char *create_array(unsigned int size, char c)
 {
@@ -17,17 +18,14 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
+
 	ch = malloc(sizeof(*ch) * size);
 	if (ch)
 	{
 		for (i = 0; i <= size; i++)
-		{
 			ch[i] = c;
-			return (ch);
-		}
+		return (ch);
 	}
 	else
-	{
 		return (NULL);
-	};
 }
