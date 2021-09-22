@@ -10,11 +10,13 @@
  * Return: NULL if size is 0 or it fails
  *	pointer
  */
-char *create_array( unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *ch;
 	unsigned int i;
 
+	if (size == 0)
+		return (NULL);
 	ch = malloc(sizeof(*ch) * size);
 	if (ch)
 	{
