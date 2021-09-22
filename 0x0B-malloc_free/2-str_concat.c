@@ -10,25 +10,29 @@
  * Return: a pointer containing s1+s2
  *	NULL if function fails
  */
-char *str_concat(char *s1, char *s2);
+char *str_concat(char *s1, char *s2)
 {
 	char s3;
-	unsigned int i;
+	int i;
+	int j = 0;
+	int k = 0;
+	
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	for (i = 0; s1[i] || s2[i]; i++)
+		j++;
 
-	i = strlen(s1) + strlen(s2);
-	if (s1 == NULL && s2 == NULL)
-	{
-		s3 = "";
-	}
-	s3 = malloc(sizeof(char) * i);
+	s3 = malloc(sizeof(char) *j);
+
 	if (s3 == NULL)
-	{
 		return (NULL);
-	}
-	else
-	{
-		s3 = strcat(s1,s2);
-		return (s3);
-	}
+
+	for (i = 0: s1[i]; i++)
+		s3[k++] = s1[i];
+	for (i = 0; s2[i]; i++)
+		s3[k++] = s2[i];
+
 	return (s3);
 }
