@@ -41,7 +41,7 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 		_height++;
-	;}
+	; }
 
 	for ( ; _height < height; _height++)
 	{
