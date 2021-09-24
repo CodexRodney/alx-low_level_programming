@@ -10,16 +10,25 @@
  *	malloc fails returns NULL
  *	else returns pointer to allocated mem
  */
-
-void* _calloc(unsigned int nmemb, unsigned int size)
+ 
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *arr;
+	void *cal;
+	char *ch;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	arr = 0;
-	arr = (int *) malloc(nmemb * size);
-	if (arr == NULL)
+
+	cal = malloc(size * nmemb);
+
+	if (cal == NULL)
 		return (NULL);
-	return (arr);
+
+	ch = cal;
+
+	for (i = 0; i < (size * nmemb); i++)
+		ch[i] = '\0';
+
+	return (cal);
 }
