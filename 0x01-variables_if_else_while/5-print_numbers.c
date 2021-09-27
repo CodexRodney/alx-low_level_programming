@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	int num;
+	char num;
 	char nline;
 
-	num = 0;
+	num = '0';
 	nline = '\n';
 
-	while (num <= 9)
+	while (num <= '9')
 	{
 		putchar(num);
 		num++;
