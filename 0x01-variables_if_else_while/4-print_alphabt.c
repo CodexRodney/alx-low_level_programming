@@ -15,7 +15,10 @@ int main(void)
 	while (str <= 'z')
 	{
 		if (str == 'e' || str == 'q')
+		{
+			str++;
 			continue;
+		}
 		putchar(str);
 		str = str + 1;
 	}
