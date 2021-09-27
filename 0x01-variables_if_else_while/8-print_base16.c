@@ -14,12 +14,12 @@ int main(void)
 	num = '0';
 	nline = '\n';
 
-	while(num <= '9')
+	while (num <= '9')
 	{
 		putchar(num);
 		num++;
 	}
-	while(con < 'g')
+	while (con < 'g')
 	{
 		putchar(con);
 		con++;
