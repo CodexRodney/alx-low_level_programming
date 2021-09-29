@@ -9,8 +9,14 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	for(int i = 0;i < size;i++)
+	/*int i;*/
+
+	if (array == NULL || action == NULL)
+		return;
+
+	while (size-- > 0)
 	{
-		action(*array[i]);
+		action(*array);
+		array++;
 	}
 }
