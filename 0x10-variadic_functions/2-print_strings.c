@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * print_strings- Prints strings
- * @seperator: String that appears btwn strings
+ * @separator: String that appears btwn strings
  * @n: Number of strings to be printed
  *
  * Return: String to be printed
