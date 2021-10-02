@@ -26,7 +26,7 @@ int main(void)
 	_putchar(n);
 	_putchar(g);
 	_putchar(b);
-	_putchar(r);
+	_putchar(v);
 	_putchar(nline);
 	return (0);
 }
