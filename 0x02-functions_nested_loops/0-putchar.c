@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char s, t, r, i, n, g, b, r, nline;
+	char s, t, r, i, n, g, b, v, nline;
 
 	s = '_';
 	t = 'p';
@@ -17,7 +17,7 @@ int main(void)
 	n = 'c';
 	g = 'h';
 	b = 'a';
-	r = 'r';
+	v = 'r';
 	nline = '\n';
 	_putchar(s);
 	_putchar(t);
