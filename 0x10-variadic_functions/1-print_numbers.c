@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * print_numbers- Prints numbers 
- * @separator- String separating numbers
+ * print_numbers- Prints numbers
+ * @separator: String separating numbers
  * @n: Number of parameters
  *
  * Return: Numbers to be printed
