@@ -20,6 +20,7 @@ void print_alphabet_x10(void)
 		s = s + 1;
 	}
 	_putchar(nline);
+	s = 'a';
 	i++;
 	}
 }
