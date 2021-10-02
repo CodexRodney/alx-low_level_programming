@@ -8,10 +8,25 @@
 
 int main(void)
 {
-	char *s;
-	char *nline = "\n";
-	s = "putchar";
-	_putchar(*s);
-	_putchar(*nline);
+	char s, t, r, i, n, g, b, r, nline;
+
+	s = '_';
+	t = 'p';
+	r = 'u';
+	i = 't';
+	n = 'c';
+	g = 'h';
+	b = 'a';
+	r = 'r';
+	nline = '\n';
+	_putchar(s);
+	_putchar(t);
+	_putchar(r);
+	_putchar(i);
+	_putchar(n);
+	_putchar(g);
+	_putchar(b);
+	_putchar(r);
+	_putchar(nline);
 	return (0);
 }
