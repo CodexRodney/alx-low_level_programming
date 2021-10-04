@@ -23,7 +23,7 @@ void print_to_98(int n)
 				_putchar(' ');
 			}
 			cpn++;
-		write(1,cpn,sizeof(cpn));
+		write(1,&cpn,sizeof(cpn));
 		}
 	}
 	else
@@ -36,7 +36,7 @@ void print_to_98(int n)
 				_putchar(' ');
 			}
 			cpn--;
-			write(1,cpn,sizeof(cpn));
+			write(1,&cpn,sizeof(cpn));
 		}
 	}
 }
