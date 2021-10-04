@@ -2,7 +2,8 @@
 #include <stdio.h>
 /**
  * _abs- Computes the absolute value of a number
- * 
+ *@a: Number to be acted upon
+ *
  * Return: Always absolute value of a number
  */
 
