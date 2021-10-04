@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
  * print_to_98- prints natural numbers from
@@ -14,7 +15,7 @@ void print_to_98(int n)
 
 	if (cpn < 98)
 	{
-		while ( cpn >= n && cpn <= 98)
+		while (cpn >= n && cpn <= 98)
 		{
 			if (cpn > n)
 			{
@@ -22,12 +23,12 @@ void print_to_98(int n)
 				_putchar(' ');
 			}
 			cpn++;
-			_putchar('0' + cpn);
+		write(1,cpn,sizeof(cpn));
 		}
 	}
 	else
 	{
-		while ( cpn <= n && cpn >= 98)
+		while (cpn <= n && cpn >= 98)
 		{
 			if (cpn < n)
 			{
@@ -35,7 +36,7 @@ void print_to_98(int n)
 				_putchar(' ');
 			}
 			cpn--;
-			_putchar('0' + cpn);
+			write(1,cpn,sizeof(cpn));
 		}
 	}
 }
