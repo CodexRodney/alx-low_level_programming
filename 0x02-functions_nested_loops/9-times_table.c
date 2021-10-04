@@ -17,7 +17,7 @@ void times_table(void)
 		{
 			num = i * c;
 			c++;
-			_putchar(num);
+			_putchar('0' + num);
 			_putchar(',');
 			_putchar(' ');
 		}
