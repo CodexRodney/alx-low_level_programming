@@ -6,22 +6,28 @@
  *
  * Return: Always 0
  */
-
 void times_table(void)
 {
-	int num, i = 0, c = 0;
+	int num, i = 0, c, j = 0;
 
-	while (i < 10)
+	while (i <= 9 && j <=9)
 	{
-		while (c < 10)
+	    c = 0;
+		while (c <= 9)
 		{
-			num = i * c;
-			c++;
-			_putchar('0' + num);
-			_putchar(',');
-			_putchar(' ');
+			m = i * c;
+			
+			if (c > 0)
+			{
+			putchar(',');
+			putchar(' ');
+			}
+			c = c + 1;
+	        _putchar('0' + num);
+			
 		}
 		i++;
-		_putchar('\n');
+		j++;
+		putchar('\n');
 	}
 }
