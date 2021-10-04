@@ -9,10 +9,12 @@
 
 int _abs(int)
 {
-	int a = _abs(int);
-
-	if (a < 0)
-		return (-a);
-	else
-		return (a);
+	int _num(a)
+	{
+		if (a < 0)
+			return (-a);
+		else
+			return (a);
+	}
+	return (_num(a));
 }
