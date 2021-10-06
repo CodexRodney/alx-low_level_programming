@@ -7,7 +7,7 @@
  * Return: Always 0
  */
 
-int main()
+int main(void)
 {
 	int b = '0';
 
@@ -21,5 +21,6 @@ int main()
 		}
 		b++;
 	}
+	putchar('\n');
 	return (0);
 }
