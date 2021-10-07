@@ -1,7 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "lists.h"
 
 /**
  * struct list_s - singly linked list
@@ -29,7 +27,7 @@ typedef struct list_s
 size_t print_list(const list_t *h)
 {
 	const list_t *tmp = h;
-	int num = 0;
+	size_t num = 0;
 
 	while (tmp->next == NULL)
 	{
