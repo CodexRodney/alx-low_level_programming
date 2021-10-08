@@ -23,7 +23,7 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[%zu] ", h->len);
+			printf("[%d] ", h->len);
 			printf("%s\n", h->str);
 		}
 		num++;
