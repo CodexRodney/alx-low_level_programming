@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * list_len- Returns the no of 
+ * list_len- Returns the no of
  * elements in a linked list
  * @h: node to linked list
  *
