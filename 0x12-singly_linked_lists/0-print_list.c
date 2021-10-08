@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
+#include "lists.h"
+#include <stdio.h>
 
 /**
  * struct list_s - singly linked list
