@@ -4,9 +4,9 @@
 #include <stdlib.h>
 
 /**
- * list_t- Adds a new node at the beginning of a list
- * @head: Node of a list
- * @str: string to be duplicated 
+ * add_node- Adds a new node at the beginning of a list
+ * @head: pointer to node to be added
+ * @str: string to be duplicated
  * to the new node
  *
  * Return: Address of the new element
