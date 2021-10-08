@@ -4,21 +4,6 @@
 #include <stdio.h>
 
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- */
-typedef struct list_s
-{
-    char *str;
-    unsigned int len;
-    struct list_s *next;
-}list_t;
-
-/**
  * print_list- Prints all the elements of
  * a list_t list
  * @h: Pointer to node
@@ -28,24 +13,21 @@ typedef struct list_s
 
 size_t print_list(const list_t *h)
 {
-	const list_t *tmp = h;
 	size_t num = 0;
 
-	while (tmp->next != NULL)
+	while (h->next != NULL)
 	{
-		if (tmp->next == NULL)
+		if (h->str == NULL)
 		{
-			printf("[%zu ] ", tmp->len);
+			printf("[0] (nil)\n");
 		}
 		else
 		{
-			if (tmp->str == NULL)
-				printf("[0] (nil)");
-			printf("[%zu ] ", tmp->len);
-			printf("%s\n", tmp->str);
-			num++;
+			printf("[%zu] ", h->len);
+			printf("%s\n", h->str);
 		}
-		tmp = tmp->next;
+		num++;
+		h = h->next;
 	}
 	return (num);
 }
