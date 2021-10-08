@@ -35,8 +35,6 @@ size_t print_list(const list_t *h)
 	{
 		if (tmp->next == NULL)
 		{
-			if (tmp->str == NULL)
-				printf("[0] (nil)\n");
 			printf("[%zu ] ", tmp->len);
 		}
 		else
