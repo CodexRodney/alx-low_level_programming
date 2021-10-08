@@ -17,10 +17,10 @@ void free_list(list_t *head)
 	}
 	else
 	{
-		while (head != NULL)
+		while ((tmp = head) != NULL)
 		{
-			tmp = head;
 			head = head->next;
+			free(tmp->str);
 			free(tmp);
 		}
 	}
