@@ -17,12 +17,12 @@ int main(int argc, char *argv[])
 	int sum = 0, j, i;
 
 	if (argc <= 1)
-		printf("0");
+		printf("0\n");
 	for (j = 1; j < argc; j++)
 	{
-		if (isdigit(atoi(argv[j])) == 0)
+		if (isdigit(atoi(argv[j])) == 1)
 		{
-			printf("Error");
+			printf("Error\n");
 			return (1);
 		}
 	}
