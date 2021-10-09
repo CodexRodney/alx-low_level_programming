@@ -21,8 +21,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	firstnum = argv[1];
-	secondnum = argv[2];
+	firstnum = atoi(argv[1]);
+	secondnum = atoi(argv[2]);
 	result = firstnum * secondnum;
 	printf("%d\n", result);
 	return (0);
