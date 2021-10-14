@@ -5,7 +5,7 @@
 
 /**
  * binary_to_unit- Converts binary to number
- * @b: A string pointing to a string containing
+ * @b: A string pointing to a string contains
  *	1s and 0s
  * Return: converted number
  *	0 if b is null
