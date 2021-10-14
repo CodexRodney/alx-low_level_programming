@@ -3,6 +3,15 @@
 #include <math.h>
 #include <string.h>
 
+/**
+ * binary_to_unit- Converts binary to number
+ * @b: A string pointing to a string containing
+ *	1s and 0s
+ * Return: converted number
+ *	0 if b is null
+ *	0 if not 1 or 0
+ */
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num = 0, mult = 1;
