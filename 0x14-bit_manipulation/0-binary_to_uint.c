@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * binary_to_unit- Converts binary to number
+ * binary_to_uint- Converts binary to number
  * @b: A string pointing to a string contains
  *	1s and 0s
  * Return: converted number
@@ -17,7 +17,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int num = 0, mult = 1;
 	int len;
 
-    	if (b == NULL)
+	if (b == NULL)
 		return (0);
 
 	for (len = 0; b[len];)
