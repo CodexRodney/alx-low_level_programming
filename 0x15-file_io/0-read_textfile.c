@@ -38,7 +38,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	ssize_t w = write(STDOUT_FILENO, c, r);
+	ssize_t w = write(1, c, r);
 
 	if (w == -1 || w != r)
 	{
@@ -49,4 +49,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(fd);
 
 	return (w);
+}
+int main()
+{
+	read_textfile("Hello", 7);
+	return (0);
 }
