@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end- Adds a new node at the end of DLL
+ * add_dnodeint_end - Adds a new node at the end of DLL
  * @head: A node of the DLL
- * @n: data of DLL
+ * @n: data of new node
  *
  * Return: address of new element
  *	NULL if failure
@@ -24,7 +24,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		*head = tmp;
 		return (tmp);
 	}
-	while((*head)->next != NULL)
+	while ((*head)->next != NULL)
 		*head = (*head)->next;
 	tmp->prev = *head;
 	(*head)->next = tmp;
