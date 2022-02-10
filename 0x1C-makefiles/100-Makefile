@@ -2,10 +2,9 @@ CC = gcc
 SRC = main.c school.c
 OKL = $(SRC:.c=.o)
 NAME = school
-RM
 CFLAGS = -Wall -Werror -Wextra -pedantic
 all: m.h $(OKL)
-	$(CC) -Wall -Werror -Wextra -pendatic $(OKL) -o $(NAME)
+	$(CC) -Wall -Werror -Wextra -pedantic $(OKL) -o $(NAME)
 clean:
 	$(RM) rm -f *~ $(NAME)
 oclean:
