@@ -1,0 +1,15 @@
+CC = gcc
+SRC = main.c school.c
+OKL = $(SRC:.c=.o)
+NAME = school
+CFLAGS = -Wall -Werror -Wextra -pedantic
+#phony is used to make the targets to work regardless
+PHONY: all clean oclean fclean
+all: m.h $(OKL)
+	$(CC) -Wall -Werror -Wextra -pedantic $(OKL) -o $(NAME)
+clean:
+	$(RM) rm -f *~ $(NAME)
+oclean:
+	$(RM) rm -f *.o
+fclean: clean oclean
+re: oclean all
